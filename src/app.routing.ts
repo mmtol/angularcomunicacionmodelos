@@ -6,6 +6,7 @@ import { ModuleWithProviders } from "@angular/core";
 import { HijococheComponent } from "./components/hijocoche.component/hijocoche.component";
 import { PadrecochesComponent } from "./components/padrecoches.component/padrecoches.component";
 import { PadredeportesComponent } from "./components/padredeportes.component/padredeportes.component";
+import { ComicsComponent } from "./components/comics.component/comics.component";
 const appRoutes:Routes=
 [
     {
@@ -19,6 +20,10 @@ const appRoutes:Routes=
     {
         path:"padredeportes",
         component:PadredeportesComponent
+    },
+    {
+        path:"comics",
+        component:ComicsComponent
     }
 ]
 
