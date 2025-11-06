@@ -2,10 +2,12 @@ import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { App } from './app';
+import { ListaproductosComponent } from '../components/listaproductos.component/listaproductos.component';
 
 @NgModule({
   declarations: [
-    App
+    App,
+    ListaproductosComponent
   ],
   imports: [
     BrowserModule
