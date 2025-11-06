@@ -18,11 +18,11 @@ export class PadrecochesComponent
   {
     this.coches = 
     [
-      new Coche("Coche 1", "Rosa", 300, 20, false),
-      new Coche("Coche 2", "Azul", 300, 20, false),
-      new Coche("Coche 3", "Verde", 300, 20, false),
-      new Coche("Coche 4", "Amarillo", 300, 20, false),
-      new Coche("Coche 5", "Rojo", 300, 20, false)
+      new Coche("Coche", "Rosa", 300, 20, false),
+      new Coche("Coche", "Azul", 300, 20, false),
+      new Coche("Coche", "Verde", 300, 20, false),
+      new Coche("Coche", "Amarillo", 300, 20, false),
+      new Coche("Coche", "Rojo", 300, 20, false)
     ]
   }
 }
