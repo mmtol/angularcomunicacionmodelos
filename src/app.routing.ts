@@ -5,6 +5,7 @@ import { RouterModule } from "@angular/router";
 import { ModuleWithProviders } from "@angular/core";
 import { HijococheComponent } from "./components/hijocoche.component/hijocoche.component";
 import { PadrecochesComponent } from "./components/padrecoches.component/padrecoches.component";
+import { PadredeportesComponent } from "./components/padredeportes.component/padredeportes.component";
 const appRoutes:Routes=
 [
     {
@@ -14,6 +15,10 @@ const appRoutes:Routes=
     {
         path:"padrecoches",
         component:PadrecochesComponent
+    },
+    {
+        path:"padredeportes",
+        component:PadredeportesComponent
     }
 ]
 

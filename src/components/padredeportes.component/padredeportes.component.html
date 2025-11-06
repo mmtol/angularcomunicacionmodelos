@@ -1,0 +1,14 @@
+<div>
+    <h1>DEPORTES</h1>
+    <h3>{{mensaje}}</h3>
+    <ul>
+        @for (deporte of deportes; track deporte)
+        {
+            <li>
+                <app-hijodeporte 
+                [sport]="deporte" 
+                (seleccionarFav)="seleccionarFav($event)"></app-hijodeporte>
+            </li>
+        }
+    </ul>
+</div>
