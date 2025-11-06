@@ -1,16 +1,14 @@
 <div>
-    <h1>{{coche.marca}} {{coche.modelo}}</h1>
-    <h2>
-        @if(coche.estado)
-        {
-            <h2 class=".encendido">{{mensaje}}</h2>
-        }
-        @else
-        {
-            <h2 class=".apagado">{{mensaje}}</h2>
-        }
-    </h2>
-    <h3>Velocidad actual: {{coche.velocidad}}</h3>
+    <h2>{{car.marca}} {{car.modelo}}</h2>
+    @if(car.estado)
+    {
+        <h3 class=".encendido">{{mensaje}}</h3>
+    }
+    @else
+    {
+        <h3 class=".apagado">{{mensaje}}</h3>
+    }
+    <p>Velocidad actual: {{car.velocidad}}</p>
     <button (click)="encenderCoche()">On/Off</button>
     <button (click)="acelerarCoche()">Acelerar</button>
 </div>

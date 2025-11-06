@@ -1,1 +1,8 @@
-<p>padrecoches.component works!</p>
+<div>
+    <h1>COCHES</h1>
+    @for(coche of coches; track coche)
+    {
+        <app-hijocoche [car]="coche"></app-hijocoche>
+        <hr/>
+    }
+</div>

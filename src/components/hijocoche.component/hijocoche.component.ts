@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Input } from '@angular/core';
 import { Coche } from '../../models/Coche';
 
 @Component(
@@ -11,12 +12,11 @@ import { Coche } from '../../models/Coche';
 
 export class HijococheComponent 
 {
-  public coche:Coche;
+  @Input() car!:Coche;
   public mensaje:string;
 
   constructor()
   {
-    this.coche = new Coche("Coche", "Rosa", 300, 20, false);
     this.mensaje = "";
   }
 
@@ -24,10 +24,10 @@ export class HijococheComponent
   {
     let estado:boolean;
 
-    if (!this.coche.estado)
+    if (!this.car.estado)
     {
       this.mensaje = "El coche esta apagado";
-      this.coche.velocidad = 0;
+      this.car.velocidad = 0;
       estado = false;
     }
     else
@@ -41,7 +41,7 @@ export class HijococheComponent
 
   encenderCoche(): void
   {
-    this.coche.estado = !this.coche.estado;
+    this.car.estado = !this.car.estado;
     this.comprobarEstado();
   }
 
@@ -53,7 +53,7 @@ export class HijococheComponent
     }
     else
     {
-      this.coche.velocidad += this.coche.aceleracion;
+      this.car.velocidad += this.car.aceleracion;
     }
   }
 }
